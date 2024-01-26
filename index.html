@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css"> <!--to connect css stylesheet-->
+    <script src="https://kit.fontawesome.com/b310154b8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> <!--To create instant div use "#name of div-name"-->
+        <div class="container">
+            <nav>
+                <img src="images/logo_transparent.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Tools</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Marc</span><br> Laurence </h1>
+            </div>
+        </div>
+    </div> 
+
+    <!--About page-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/coding.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello there! I'm Marc Laurence Basilio, a aspiring full-stack web developer fueled by a deep passion for coding. Making a career shift, I've embarked on a thrilling journey to create captivating websites and web applications. Follow along with me on this exciting adventure as I showcase my commitment to coding and design through my portfolio.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>ADVOCACY TEAM / TIER 3 COLLECTION</span><br>Probe group philippines Inc.</li>
+                                <p>- Providing assistance to customers who experienced financial
+                                difficulties in paying the phone/internet bills through chat or
+                                phone call.</p>
+                            <li><span>CHAT SUPPORT/ COLLECTION PAYMENT
+                                SUPPORT TIER 1</span><br>Probe group philippines Inc.</li>
+                                <p>- Responsible for collecting customers' payments and
+                                    explaining their monthly phone bill</p>
+                            <li><span>CUSTOMER SERVICE REPRESENTATIVE</span><br>Quantrics Enterprises Inc.</li>
+                                <p>- Responsible for assisting customers with their billing queries</p>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>September 2023 - January 2024:</span> Zuitt Web Developer Program<br>Main Course Package (MERN) - Full-stack Web Development</li>
+                            <li><span>March 2015 - April 2019:</span> Bachelor of Science in Computer Science<br>Bicol University Polangui Campus</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Services Page-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Tools that I'm using</h1>
+            <div class="service-list">
+                <div>
+                    <!-- HTML, Bootstrap, CSS, and JavaScript logos -->
+                    <h2>Front End</h2>
+                    <img src="images/logo-html5.png" alt="HTML Logo">
+                    <img src="images/bootstrap.png" alt="Bootstrap Logo">
+                    <img src="images/logo-css3.png" alt="CSS Logo">
+                    <img src="images/logo-javascript.png" alt="JavaScript Logo">
+                </div>
+    
+                <div>
+                    <!-- Node.js, MongoDB, React.js logos -->
+                    <h2>Mern</h2>
+                    <img src="images/logo-node.png" alt="Node.js Logo">
+                    <img src="images/logo-mongodb.png" alt="MongoDB Logo">
+                    <img src="images/logo-expressjs.png" alt="Express logo">
+                    <img src="images/logo-react.png" alt="React.js Logo">
+                </div>
+    
+                <div>
+                    <!-- Git, Postman, VSCode logos -->
+                    <h2>Other Tools</h2>
+                    <img src="images/logo-git.png" alt="Git Logo">
+                    <img src="images/logo-postman.png" alt="Postman Logo">
+                    <img src="images/Vscode-logo.png" alt="VSCode Logo">
+                    <img src="images/logo-sublime.png" alt="sublime Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Porfolio Page-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorem provident placeat quisquam earum magnam sed eos. Necessitatibus earum omnis fuga nihil error voluptatibus saepe temporibus. Quibusdam sequi quos repudiandae!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>   
+                    </div>
+                </div>
+
+                <div class="work">
+                        <img src="images/work-2.png">
+     
+                    <div class="layer">
+                        <h3>Ecommerce API</h3>
+                        <p>This backend API, built with JavaScript, Postman, and Node, streamlines product management, ensuring seamless data transactions and robust functionality.</p>
+                        <a href="http://ec2-18-218-105-138.us-east-2.compute.amazonaws.com/b3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>   
+                    </div>
+                </div>
+                
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping app</h3>
+                        <p>Our dynamic Ecommerce website, crafted with the MERN (MongoDB, Express.js, React.js, Node.js) stack, delivers a modern and user-friendly online shopping experience.</p>
+                        <a href="http://zuitt-bootcamp-prod-322-5874-basilio.s3-website.us-east-1.amazonaws.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>   
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Back to top</a>
+        </div>
+    </div>
+  
+<!--contact Page-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-regular fa-paper-plane"></i>basiliomarclaurence@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone-flip"></i> 09086308104</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.linkedin.com " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Marc's Resume (updated).pdf" download class="btn btn2"> Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Marc <i class="fa-solid fa-code"></i>. All right reserved</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNMjoQjfIIOoerdiS_QLYWATyvQ4ff9Md0_EgkDSqphgZdPuRvWaCcG6Ok8XFUsXxg3A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
